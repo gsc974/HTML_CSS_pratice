@@ -1,0 +1,163 @@
+Use identifier to force color change*/
+#buttonColor{
+	background-color: #1877F2;
+	transition-property: background-color;
+    transition-duration: 750ms;
+}
+
+#buttonColor:hover{
+	background-color: red;
+}
+
+/*Change color of a png*/
+.whiteImage {
+	filter: brightness(0) invert(1);
+}
+.banner {
+	text-align: center;
+/*	font-size: 300px;
+*/	color: red;
+}
+
+h1 {
+	font-size: 100px;
+}
+h2 {
+	text-align: center;
+  	font-size: 30px;
+  	text-decoration: underline;
+	margin-top: 40px;
+  	margin-bottom: 40px;
+}
+/*---------------------------------------*/
+.card h5 {
+	color: #f93f23;
+	line-height: 1;
+	letter-spacing: 1px;
+	font-family: "Renner",sans-serif;
+	font-weight: bold;
+	font-size: 0.725rem;
+	text-transform: uppercase;
+	/*position: relative;*/
+}
+.card {
+	padding: 0px;
+	border: 1px;
+	border-radius: 15px;
+	box-shadow: 1px 2px;
+}
+.card-text {
+	font-family: serif;
+	font: bold "Source Serif Pro",serif;
+}
+.card img {
+	/*border-radius: 15px;*/
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+}
+
+.card:hover {
+	transform: scale(0.99);
+}
+
+.hed {
+	font-family: sans-serif;
+	font-weight: normal;
+	letter-spacing: 1px;
+	font-size: 0.825rem;
+}
+
+.container {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+}
+
+#container-button {
+	display: flex;
+	justify-content: center;
+	padding: 0px;
+	padding-bottom: 20px;
+}
+
+/*---------------------------------------*/
+.containerAnimation {
+	display: flex;
+	/*justify-content: space-around;*/
+	justify-content: space-around;
+	align-content: space-around;
+	height: 300px;
+}
+
+.textPosition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  text-align: center;
+}
+
+
+.SquareAnimatedButton {
+  width: 100px;
+  height: 100px;
+  background: #f2b3b3;
+  transition: width 2s, height 2s, transform 2s, background 2s;
+  justify-content: center;
+  align-items: center;
+}
+
+/*.SquareAnimatedButton::before {
+	content: "before";
+	position: static;
+}
+
+.SquareAnimatedButton::after {
+	content: "after";
+	position: relative;
+}*/
+
+.SquareAnimatedButton:hover {
+  width: 200px;
+  height: 200px;
+  background: blue;
+  transform: rotate(180deg);
+}
+
+/*.textPosition:hover {
+  width: 200px;
+  height: 200px;
+  background: blue;
+  transform: rotate(-180deg);
+}*/
+
+hr {
+  border: 1px dashed red;
+  width: 30%;
+  /*padding-top: 20px;*/
+}
+
+
+/*.textPosition:hover {
+	transform: rotateZ(-270deg);
+}
+/*--------------------------------*/
+/*Masonry style*/
+.masonry {
+  display: grid;
+  grid-gap: 15px; /* [1] Add some gap between rows and columns */
+  /*grid-template-rows: auto auto auto;*//*repeat( auto-fill ); *//* [2] Make columns adjust according to the available viewport */
+  grid-template-columns: auto auto auto;/*repeat( auto-fill );*/
+  /*grid-auto-rows: 250px;  [3] Set the height for implicitly-created row track */
+  /*grid-row-gap: 20px;*/
+  margin-bottom: 50px;
+}
+.masonry img {
+  border-radius: 15px;
+
+}
+.masonry img:hover {
+	transform: scale(0.99);
+	box-shadow: 
+}
